@@ -1,6 +1,8 @@
 I4u::Application.routes.draw do
   ActiveAdmin.routes(self)
 
+  get '/blog/articles/capacitacion-ruby-on-rails-studio', to: redirect('/blog/articles/capacitacion-git-y-github', status: 302)
+
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   resources :projects, only: [:index, :show] do

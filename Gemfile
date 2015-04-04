@@ -17,6 +17,7 @@ gem 'strong_parameters',    '0.2.0'
 gem 'virtus'
 gem 'decent_exposure'
 gem 'spectator-validates_email', require: 'validates_email'
+gem 'jquery-cookie-rails'
 
 # Engines
 gem 'devise',               '2.1.0'
@@ -63,13 +64,13 @@ gem 'jquery-rails', '2.0.2'
 gem 'slim-rails',   '1.0.3'
 
 group :assets do
-  gem 'sass'
+  gem 'sass', '~> 3.2.5'
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'compass-rails'
   gem 'uglifier'
-  gem 'bourbon'
-  gem 'neat'
+  gem 'bourbon', '~> 2.1.2'
+  gem 'neat', '~> 1.0.2'
 end
 
 # Production
